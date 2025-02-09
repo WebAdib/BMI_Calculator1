@@ -1,5 +1,6 @@
 // My application
 import 'package:flutter/material.dart';
+import 'DetailedResultScreen.dart';
 import 'HomeScreen.dart';
 import 'BMICalculatorScreen.dart';
 import 'BMIResultScreen.dart';
@@ -50,8 +51,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomeScreen(),
         '/bmiCalculator': (context) => BMICalculatorScreen(),
-        '/bmiResult': (context) =>
-            BMIResultScreen(), // Register the missing route
+        '/bmiResult': (context) => BMIResultScreen(),
+        '/bmiDetails': (context) => DetailedResultScreen(), // Add this line
       },
     );
   }
